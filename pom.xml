@@ -5,10 +5,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<name>Oril-BinanceClient</name>
-	<groupId>co.oril</groupId>
-	<artifactId>binance-api-client-java</artifactId>
+	<groupId>com.scrooge</groupId>
+	<artifactId>binance-java-sdk</artifactId>
 	<description>Binance API Client</description>
-	<version>1.0.4</version>
+	<version>1.0.5</version>
 	<packaging>jar</packaging>
 
 	<properties>
@@ -94,7 +94,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/Samarskyi/binance-api-client-java</url>
+			<url>https://maven.pkg.github.com/Samarskyi/binance-java-sdk</url>
 		</repository>
 	</distributionManagement>
 
