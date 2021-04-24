@@ -9,29 +9,7 @@
 	<artifactId>binance-api-client-java</artifactId>
 	<description>Binance API Client</description>
 	<version>1.0.4</version>
-
 	<packaging>jar</packaging>
-	<url>https://github.com/oril-software/binance-api-client-java</url>
-
-	<developers>
-		<developer>
-			<name>Samarskyi</name>
-			<email>samgeka@gmail.com</email>
-		</developer>
-	</developers>
-
-	<scm>
-		<url>https://github.com/oril-software/binance-api-client-java</url>
-		<connection>scm:git:git@github.com:oril-software/binance-api-client-java.git</connection>
-		<developerConnection>scm:git:git@github.com:oril-software/binance-api-client-java.git</developerConnection>
-	</scm>
-
-	<licenses>
-		<license>
-			<name>Apache License, Version 2.0</name>
-			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
-		</license>
-	</licenses>
 
 	<properties>
 		<com.squareup.retrofit2.version>2.4.0</com.squareup.retrofit2.version>
@@ -109,32 +87,14 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-gpg-plugin</artifactId>
-				<version>1.6</version>
-				<executions>
-					<execution>
-						<id>sign-artifacts</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>sign</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
 
 	<distributionManagement>
-<!--		<repository>-->
-<!--			<id>ossrh</id>-->
-<!--			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
-<!--		</repository>-->
 		<repository>
 			<id>github</id>
 			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/oril-software/binance-api-client-java</url>
+			<url>https://maven.pkg.github.com/Samarskyi/binance-api-client-java</url>
 		</repository>
 	</distributionManagement>
 
