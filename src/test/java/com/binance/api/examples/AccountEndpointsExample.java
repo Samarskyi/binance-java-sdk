@@ -2,6 +2,7 @@ package com.binance.api.examples;
 
 import com.binance.api.client.BinanceApiClientFactory;
 import com.binance.api.client.BinanceApiRestClient;
+import com.binance.api.client.constant.BinanceApiConstants;
 import com.binance.api.client.domain.account.Account;
 import com.binance.api.client.domain.account.Trade;
 
@@ -23,7 +24,7 @@ public class AccountEndpointsExample {
 
 
 		// Get list of trades
-		List<Trade> myTrades = client.getMyTrades("NEOETH");
+		List<Trade> myTrades = client.getMyTrades("SOLUSDT", 100, null, 2334396346L,BinanceApiConstants.DEFAULT_RECEIVING_WINDOW, System.currentTimeMillis());
 		System.out.println(myTrades);
 
 		// Get withdraw history
