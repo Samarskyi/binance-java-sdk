@@ -2,13 +2,7 @@ package com.binance.api.examples;
 
 import com.binance.api.client.BinanceApiClientFactory;
 import com.binance.api.client.BinanceApiRestClient;
-import com.binance.api.client.domain.market.AggTrade;
-import com.binance.api.client.domain.market.BookTicker;
-import com.binance.api.client.domain.market.Candlestick;
-import com.binance.api.client.domain.market.CandlestickInterval;
-import com.binance.api.client.domain.market.OrderBook;
-import com.binance.api.client.domain.market.TickerPrice;
-import com.binance.api.client.domain.market.TickerStatistics;
+import com.binance.api.client.domain.market.*;
 import com.binance.api.client.exception.BinanceApiException;
 
 import java.util.List;
@@ -29,6 +23,9 @@ public class MarketDataEndpointsExample {
 		// Getting latest price of a symbol
 		TickerStatistics tickerStatistics = client.get24HrPriceStatistics("NEOETH");
 		System.out.println(tickerStatistics);
+
+		List<TickerStatistics> tickerStatisticsList = client.get24HrPriceStatisticsNew("[\"BTCUSDT\",\"BNBUSDT\"]");
+		System.out.println(tickerStatisticsList);
 
 		// Getting all latest prices
 		List<TickerPrice> allPrices = client.getAllPrices();
